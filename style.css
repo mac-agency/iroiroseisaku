@@ -1,0 +1,344 @@
+.top_header {
+  float: left;
+  background-color: rgba(255,255,255,1.00);
+  clear: both;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 5px;
+}
+
+.top-h1 {
+  color: hsla(0,0%,60%,1.00);
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 3px;
+}
+
+#main-header {
+  display: none;
+}
+
+.top_logo {
+  float: left;
+  padding-top: 5px;
+}
+
+.top_contact {
+  float: right;
+}
+
+.top_tel {
+	float: left;
+	padding-top: 46px;
+	padding-right: 15px;
+}
+
+.mail_wapper {
+  float: left;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 53px;
+  margin-right: 0px;
+  padding-right: 5px;
+}
+
+.top_girl {
+  float: left;
+  padding-top: 15px;
+}
+
+.otoiawase {
+  margin-right: 5px;
+}
+
+body {
+  background-color: rgba(163,163,163,1.00);
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (min-width: 981px)
+.et_pb_row .et_pb_column.et-last-child, .et_pb_row .et_pb_column:last-child, .et_pb_row_inner .et_pb_column.et-last-child, .et_pb_row_inner .et_pb_column:last-child {
+    margin-right: 0!important;
+    text-align: center;
+}
+
+.et-db #et-boc .et-l .et_pb_fullwidth_menu .et_pb_menu__menu, .et-db #et-boc .et-l .et_pb_menu .et_pb_menu__menu {
+    display: flex;
+    align-items: stretch;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: center;
+}
+
+.et-db #et-boc .et-l .et_pb_fullwidth_menu .et_pb_menu__menu>nav, .et-db #et-boc .et-l .et_pb_menu .et_pb_menu__menu>nav {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    text-align: center;
+}
+
+.et-db #et-boc .et-l .et_pb_fullwidth_menu--without-logo .et_pb_menu__menu>nav>ul, .et-db #et-boc .et-l .et_pb_menu--without-logo .et_pb_menu__menu>nav>ul {
+    padding: 0!important;
+    width: 100%;
+}
+
+.et-db #et-boc .et-l .et_pb_fullwidth_menu--without-logo .et_pb_menu__menu>nav>ul>li, .et-db #et-boc .et-l .et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li {
+    margin-top: 8px;
+    width: 20%;
+    text-align: center;
+}
+
+.et-db #et-boc .et-l .et_pb_fullwidth_menu--without-logo .et_pb_menu__menu>nav>ul>li, .et-db #et-boc .et-l .et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li {
+    margin-top: 8px;
+    width: 20%;
+    text-align: center;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #ffffff;
+    text-align: center!important;
+}
+
+.et-db #et-boc .et-l .et_pb_fullwidth_menu--without-logo .et_pb_menu__menu>nav>ul>li, .et-db #et-boc .et-l .et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li {
+    margin-top: 0px;
+    width: 20%;
+    text-align: center;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #ffffff;
+    text-align: center!important;
+}
+
+.et-db #et-boc .et-l .et_pb_fullwidth_menu--without-logo .et_pb_menu__menu>nav>ul>li>a, .et-db #et-boc .et-l .et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li>a {
+    padding-bottom: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li#menu-item-38 {
+    border-right-style: none;
+    border-right-width: 0px!important;
+}
+
+.bottom_footer {
+  float: left;
+  background-color: rgba(247,176,3,1.00);
+  clear: both;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 0px;
+}
+
+.bottom_girl {
+  float: left;
+  margin-top: -50px;
+  margin-left: 5%;
+}
+
+.jikan_wapper {
+  float: left;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  margin-right: auto;
+  padding-right: 5px;
+  text-align: center;
+  margin-left: auto;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.footer_tel {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.footer_contact {
+  float: right;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 5%;
+  width: 100％;
+  max-width: 100%;
+  height: auto;
+}
+
+/*form*/
+.cform th {
+  font-size: 14px;
+  width: 30%; /*変なところで改行される場合はここの数字を変更します。*/
+  border-bottom: solid 1px #d6d6d6;
+  padding: 10px 0 10px 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.cform td {
+	font-size: 14px;
+	line-height: 150%;
+	border-bottom: solid 1px #d6d6d6;
+	padding: 10px 5px;
+}
+
+.cform {
+	width: 100%;
+	margin: auto;
+}
+
+.cform [type=submit] {
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px 30px;
+	text-decoration: none;
+	background: #ff8f00;
+	color: #FFF;
+	border-bottom: solid 4px #B17C00;
+	border-radius: 3px;
+}
+
+.cform option,
+.cform textarea,
+.cform input[type=text],
+.cform input[type=email],
+.cform input[type=search],
+.cform input[type=url] {
+	width: 100%;
+}
+
+.required-srt {
+	font-size: 8pt;
+	padding: 5px;
+	background: #ce0000;
+	color: #fff;
+	border-radius: 3px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+@media only screen and (max-width:767px) {
+	.cform th,
+	.cform td {
+		width: 100%;
+		display: block;
+		border-top: none;
+	}
+}
+
+.submit-btn input {
+	background: #00142c;
+	width: 60%;
+	max-width: 550px;
+	min-width: 220px;
+	margin: 30px auto;
+	display: block;
+	border: 1px #00142c solid;
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+	transition: all 0.4s ease;
+}
+
+.submit-btn input:hover {
+	background: #fff;
+	color: #00142c;
+}
+
+@media (max-width:980px){
+  .et-db #et-boc .et-l .et_pb_fullwidth_menu .et_pb_menu__menu, .et-db #et-boc .et-l .et_pb_menu .et_pb_menu__menu {
+    display: none;
+}
+}
+
+@media (min-width:981px){
+}
+
+
+.et-db #et-boc .et-l .et_pb_fullwidth_menu .et_pb_menu__menu, .et-db #et-boc .et-l .et_pb_menu .et_pb_menu__menu {
+    display: flex;
+    align-items: stretch;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    width: 95%;
+    text-align: center;
+}
+
+.et_pb_menu__wrap {
+    margin: 0 0px;
+}
+@media (min-width:320px) and (max-width:414px){
+
+.mail_wapper {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  clear: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.top_tel {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 5px;
+}
+
+.top_contact {
+  float: left;
+  clear: both;
+}
+
+.top_logo {
+  float: left;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.top_header {
+  background-color: rgba(255,255,255,1.00);
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 5px;
+}
+
+.logo-sm {
+  width: 30%;
+  height: auto;
+}
+
+.top-h1 {
+  color: hsla(0,0%,60%,1.00);
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 3px;
+}
+}

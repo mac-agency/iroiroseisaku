@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<style type="text/css">
+ /* --- テーブル全体のスタイル指定 --------------- */
+.tableArea {
+	margin         : auto;             /* 自動位置   */
+	border-collapse: collapse;         /* 境界線結合 */
+	border-spacing : 0;                /* 罫線間余白 */
+	font-size      : 9pt;              /* 文字サイズ */
+	background     : #fff;             /* テーブル全体の背景色 */
+	width: 100%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+ /* --- セルのスタイル指定 ----------------------- */
+.tableArea th,.tableArea td {
+  text-align    : center;            /* 文字位置   */
+  padding       : 5px;               /* 余白       */
+  border        : 1px #666 solid;    /* 罫線       */
+}
+ /* --- ヘッダースタイル指定 --------------------- */
+.tableArea th {
+  background    : #99ccff;           /* 背景色     */
+}
+
+.time {
+	width: 15%;
+}
+
+.youbi {
+	width: 10%;
+}
+
+.day {
+	font-size: 17px;
+}
+
+.remark {
+	font-size: 12px;
+}
+
+.text-white {
+	color: #FFFFFF;
+}
+
+.pm-off {
+	background-image: url(https://ogawaganka.or.jp/wp-content/uploads/2019/12/pm-off.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.off-time {
+	width: 20px;
+	height: 20px;
+	background-color: #fbe6ef;
+	float: left;
+	border: 1px solid #666666;
+}
+
+.type {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #666666;
+	float: left;
+	margin-top: 0px;
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+.type-wrap {
+	margin-top: 10px;
+}
+
+
+@media (max-width:320px){
+
+.day {
+	font-size: 13px;
+}
+}
+
+@media (min-width:321px) and (max-width:375px){
+
+.day {
+	font-size: 13px;
+}
+}
+
+@media (min-width:376px) and (max-width:414px){
+
+.day {
+	font-size: 12px;
+}
+}
+</style>
+</head>
+
+<body>
+  <table class="tableArea">
+	<tbody>
+		<tr>
+			<th class="time" scope="col">受付時間</th>
+			<th class="youbi" scope="col">月</th>
+			<th class="youbi" scope="col">火</th>
+			<th class="youbi" scope="col">水</th>
+			<th class="youbi" scope="col">木</th>
+			<th class="youbi" scope="col">金</th>
+			<th class="youbi" scope="col">土</th>
+			<th class="youbi" scope="col">日・祝</th>
+		</tr>
+		<tr class="day">
+			<th class="text-white" scope="row">8:00〜12:30</th>
+			<td class="day">◯<span class="remark">11:00まで</span></td>
+			<td>◎</td>
+			<td>◎</td>
+			<td>▲</td>
+			<td>◎</td>
+			<td>◎</td>
+			<td>-</td>
+		</tr>
+		<tr class="day">
+			<th class="text-white" scope="row">14:30〜17:30</th>
+			<td>◎</td>
+			<td>◎</td>
+			<td>◎</td>
+			<td>-</td>
+			<td>◎</td>
+			<td>-</td>
+			<td class="pm-off">-</td>
+		</tr>
+	</tbody>
+</table>
+  
+  <div class="type-wrap"><div class="off-time"></div><p class="type">休診</p></div>
+</body>
+</html>

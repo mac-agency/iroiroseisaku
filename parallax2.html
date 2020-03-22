@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+ <script src="http://www.yourdomain.com/js/rellax.min.js"></script>
+  <script>
+ var rellax = new Rellax('.rellax', {
+  center: true,
+});
+</script>
+  
+<style type="text/css">
+ .sample3 .contents{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.sample3 .contents:nth-of-type(1){
+  background-image: url(http://ncreed.local/wp-content/uploads/2019/11/syoukai-top-1.jpg);
+}
+
+
+body {
+  height: 1000px;
+}
+</style>
+  <script>
+$('.parallax').Parlx({
+	 item: '.background'
+});
+</script>
+</head>
+
+<body>
+ <div class="sample3">
+  <div class="contents">
+    <div class="rellax" data-rellax-speed="4">
+      <p class="title">SAMPLE TITTLE</p>
+      <p class="text">text text text text text text text text text text<br>text text text text text text text text text<br>text text text text text text text text</p>
+      <a href="#">view more</a>
+    </div>
+  </div>
+   </div>
+</body>
+</html>

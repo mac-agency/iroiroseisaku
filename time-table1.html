@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<style type="text/css">
+.wrap{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+table th:first-child{
+  border-radius: 5px 0 0 0;
+}
+
+table th:last-child{
+	border-radius: 0 5px 0 0;
+	border-right: 1px solid #3c6690;
+}
+
+.time {
+	width: 15%;
+}
+
+.youbi {
+}
+
+table th{
+	text-align: center;
+	color: white;
+	background: linear-gradient(#829ebc,#225588);
+	border-left: 1px solid #3c6690;
+	border-top: 1px solid #3c6690;
+	border-bottom: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+	/* [disabled]width: 25%; */
+	padding: 10px 0;
+}
+
+table td{
+  text-align: center;
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top:none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+table td:last-child{
+  border-right: 1px solid #a8b7c5;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+.remark {
+	color: #000000;
+	font-size: 13px;
+}
+
+@media (max-width:320px){
+
+.wrap {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	table-layout: fixed;
+}
+}
+
+@media (min-width:321px) and (max-width:375px){
+
+.wrap {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	table-layout: fixed;
+}
+}
+
+@media (min-width:376px) and (max-width:414px){
+
+.wrap {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	table-layout: fixed;
+}
+}
+</style>
+</head>
+
+<body>
+  <table class="wrap">
+	<tbody>
+		<tr>
+			<th class="time" scope="col">受付時間</th>
+			<th class="youbi" scope="col">月</th>
+			<th class="youbi" scope="col">火</th>
+			<th class="youbi" scope="col">水</th>
+			<th class="youbi" scope="col">木</th>
+			<th class="youbi" scope="col">金</th>
+			<th class="youbi" scope="col">土</th>
+			<th class="youbi" scope="col">日・祝</th>
+		</tr>
+		<tr class="day">
+			<th class="text-white" scope="row">8:00〜12:30</th>
+			<td class="day">◯<span class="remark">11:00まで</span></td>
+			<td>◎</td>
+			<td>◎</td>
+			<td>▲</td>
+			<td>◎</td>
+			<td>◎</td>
+			<td>-</td>
+		</tr>
+		<tr class="day">
+			<th class="text-white" scope="row">14:30〜17:30</th>
+			<td>◎</td>
+			<td>◎</td>
+			<td>◎</td>
+			<td>-</td>
+			<td>◎</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+	</tbody>
+</table>
+  
+  <table class="wrap" width="100%" border="1">
+	<tbody>
+		<tr>
+			<th class="time" scope="col">&nbsp;</th>
+			<th class="youbi" scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+		</tr>
+		<tr>
+			<th scope="row">&nbsp;</th>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th scope="row">&nbsp;</th>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

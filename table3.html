@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #schedule{
+  width: 100%;
+  border-spacing: 5px 10px;
+  border-collapse: separate;
+  line-height: 1.4em;
+}
+
+table th,table td{
+  /* [disabled]border-radius: 5px; */
+  text-align: center;
+  padding: 10px 0;
+  border-spacing: 0px 4px;
+  margin-right: 0px;
+}
+
+#schedule th{
+  background-color: #F2AB29;
+  color: white;
+  border: 1px solid #F2AB29;
+  width: 20%;
+  height: auto;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+#schedule td{
+  text-align: left;
+  padding-left: 15px;
+  max-height: 3em;
+  margin-left: 0px;
+  border-top: 3px solid rgba(254,0,4,1.00);
+}
+
+.koumoku {
+  text-align: left;
+  font-weight: bold;
+  width: 130px;
+  margin-left: 0px;
+  border-left: 3px solid rgba(255,0,4,1.00);
+  border-right: 0px solid rgba(255,0,4,1.00);
+  border-bottom: 3px solid rgba(255,0,4,1.00);
+  border-top: 3px solid rgba(255,0,4,1.00);
+}
+
+.naiyou {
+  color: rgba(119,119,119,1.00);
+  font-size: 16px;
+  position: relative;
+  left: -5px;
+  border-right-color: rgba(254,0,4,1.00);
+  border-bottom-color: rgba(254,0,4,1.00);
+  border-top-color: rgba(254,0,4,1.00);
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+}
+
+.time {
+  color: rgba(255,255,255,1.00);
+}
+
+
+
+@media (max-width:414px){
+
+.koumoku {
+  text-align: left;
+  font-weight: bold;
+  width: 105px;
+  font-size: 13px;
+}
+
+.naiyou {
+  color: rgba(119,119,119,1.00);
+  font-size: 14px;
+  line-height: 1.3em;
+}
+}
+
+@media (min-width:415px) and (max-width:980px){
+
+table th {
+  width: 20%;
+}
+
+.koumoku {
+  width: 123px;
+  font-size: 15px;
+}
+
+.naiyou {
+  font-size: 15px;
+}
+}
+</style>
+</head>
+
+<body>
+  <table id="schedule">
+  <tr>
+  <th class="time">11:45</th>
+    <td class="koumoku">出社</td><td class="naiyou">朝礼前にみんなで朝の清掃からスタート！</td>
+  </tr>
+    <tr>
+  <th class="time">12:00</th>
+    <td class="koumoku">ミーティング</td>
+      <td class="naiyou">色々な項目や議題でミーティング｡その日･その週の目的を明確にし､社内の団結力と意識を高めます｡</td>
+  </tr>
+    <tr>
+  <th class="time">13:00</th>
+    <td class="koumoku">移動</td><td class="naiyou"></td>
+  </tr>
+    <tr>
+  <th class="time">14:00</th>
+    <td class="koumoku">お客様宅訪問</td><td class="naiyou"></td>
+  </tr>
+    <tr>
+  <th class="time">16:00</th>
+    <td class="koumoku">エリア全員で休憩</td><td class="naiyou"></td>
+  </tr>
+    <tr>
+  <th class="time">17:30</th>
+    <td class="koumoku">活動再開</td><td class="naiyou">前半で回れなかったお客様宅をお伺い。</td>
+  </tr>
+    <tr>
+  <th class="time">20:00</th>
+    <td class="koumoku">活動終了</td><td class="naiyou">活動が終わったら、事務所に戻ってその日の報告書を提出し、業務終了です。</td>
+  </tr>
+    
+  
+</table>
+  
+</body>
+</html>

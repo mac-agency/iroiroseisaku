@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<style type="text/css">
+/*====================================================================
+.s_04 .accordion_one
+====================================================================*/
+.s_04 .accordion_one {
+  max-width: 100％;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.s_04 .accordion_one .accordion_header {
+  background-color: #F2AB29;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 20px 2% 20px 1%;
+  text-align: left;
+  position: relative;
+  z-index: +1;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.s_04 .accordion_one:nth-of-type(2) .accordion_header {
+  background-color: #F2AB29;
+}
+.s_04 .accordion_one:nth-of-type(3) .accordion_header {
+  background-color: #F2AB29;
+}
+.s_04 .accordion_one .accordion_header:hover {
+    opacity: .8;
+}
+.s_04 .accordion_one .accordion_header .i_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  margin-top: -20px;
+  box-sizing: border-box;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition-duration: 0.2s;
+}
+.s_04 .accordion_one .accordion_header.stay .i_box {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.s_04 .accordion_one .accordion_header .i_box .one_i {
+    display: block;
+    width: 18px;
+    height: 18px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition-duration: 0.2s;
+    position: relative;
+}
+.s_04 .accordion_one .accordion_header.stay .i_box .one_i {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.s_04 .accordion_one .accordion_header.stay.open .i_box .one_i {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.s_04 .accordion_one .accordion_header.open .i_box {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
+.s_04 .accordion_one .accordion_header.stay.open .i_box {
+    -webkit-transform: rotate(315eg);
+    transform: rotate(315deg);
+}
+.s_04 .accordion_one .accordion_header .i_box .one_i:before, .s_04 .accordion_one .accordion_header .i_box .one_i:after {
+    display: flex;
+    content: '';
+    background-color: #fff;
+    border-radius: 10px;
+    width: 18px;
+    height: 4px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+.s_04 .accordion_one .accordion_header .i_box .one_i:before {
+    width: 4px;
+    height: 18px;
+    top: 0;
+    left: 7px;
+}
+.s_04 .accordion_one .accordion_header.stay .i_box .one_i:before {
+    content: none;
+}
+.s_04 .accordion_one .accordion_header.open .i_box .one_i:before {
+    content: none;
+}
+.s_04 .accordion_one .accordion_header.stay.open .i_box .one_i:before {
+    content: "";
+}
+.s_04 .accordion_one .accordion_header.open .i_box .one_i:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.s_04 .accordion_one .accordion_header.stay.open .i_box .one_i:after {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.s_04 .accordion_one .accordion_inner {
+  display: none;
+  padding: 30px 30px;
+  border-left: 2px solid #F2AB29;
+  border-right: 2px solid #F2AB29;
+  border-bottom: 2px solid #F2AB29;
+  box-sizing: border-box;
+}
+.s_04 .accordion_one .accordion_inner.stay {
+    display: block;
+}
+.s_04 .accordion_one:nth-of-type(2) .accordion_inner {
+    border-left: 2px solid #ff9a05;
+    border-right: 2px solid #ff9a05;
+    border-bottom: 2px solid #ff9a05;
+}
+.s_04 .accordion_one:nth-of-type(3) .accordion_inner {
+  border-left: 2px solid #F2AB29;
+  border-right: 2px solid #F2AB29;
+  border-bottom: 2px solid #F2AB29;
+}
+.s_04 .accordion_one .accordion_inner .box_one {
+  /* [disabled]height: 300px; */
+}
+.s_04 .accordion_one .accordion_inner p.txt_a_ac {
+    margin: 0;
+}
+@media screen and (max-width: 1024px) {
+    .s_04 .accordion_one .accordion_header {
+        font-size: 18px;
+    }
+    .s_04 .accordion_one .accordion_header .i_box {
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .s_04 .accordion_one .accordion_header {
+        font-size: 16px;
+        text-align: left;
+        padding: 15px 60px 15px 15px;
+    }
+}
+</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script>
+  // .s_04 .accordion_one
+$(function(){
+  //.accordion_oneの中の.accordion_headerがクリックされたら
+  $('.s_04 .accordion_one .accordion_header').click(function(){
+    //クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerが開いたり閉じたりする。
+    $(this).next('.accordion_inner').slideToggle();
+    $(this).toggleClass("open");
+    //クリックされた.accordion_oneの中の.accordion_header以外の.accordion_oneの中の.accordion_headerに隣接する.accordion_oneの中の.accordion_innerを閉じる
+    $('.s_04 .accordion_one .accordion_header').not($(this)).next('.accordion_one .accordion_inner').slideUp();
+    $('.s_04 .accordion_one .accordion_header').not($(this)).removeClass("open");
+    $('.s_04 .accordion_one .accordion_header.stay').not($(this)).toggleClass("open");
+  });
+});
+  </script>
+</head>
+
+<body>
+ 
+<div class="section s_04">
+
+  <div class="accordion_one">
+    <div class="accordion_header stay">Q　Nクリードに入社したきっかけは？<div class="i_box"><i class="one_i"></i></div></div>
+    <div class="accordion_inner stay">
+      <div class="box_one">
+        <p class="txt_a_ac">元々接客の仕事をしていたのですが、転職を考え始めたときに、たまたま求人誌に出ていたのがNクリードでした。今まで営業の仕事に携わったことがなかったのですが、未経験の方でも活躍している人が多いということと案内の仕事なのでモノを売ったりする営業に比べてやりやすいのではないかと感じ応募して採用して頂きました。</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion_one">
+    <div class="accordion_header">Q　実際に入社してみていかがですか？<div class="i_box"><i class="one_i"></i></div></div>
+    <div class="accordion_inner">
+      <div class="box_one">
+        <p class="txt_a_ac">この仕事は明確な目的と目標しかなく、すべて結果が数字に表れるので、今までの接客業に比べたら自分の頑張りがダイレクトに表れるのでそこにやりがいを感じています。<br>
+<br>
+もちろん頑張った分は給与に直結する仕組みになっているので、自分の頑張った分正しく評価してくれる給与システムも魅力だと思っております。</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion_one">
+    <div class="accordion_header">Q　最後に求職者に一言お願いします！<div class="i_box"><i class="one_i"></i></div></div>
+    <div class="accordion_inner">
+      <div class="box_one">
+        <p class="txt_a_ac">僕は営業未経験からこの仕事を始めましたが、充実した教育環境と頑張りがダイレクトに反映されるこの仕事は今までやってきた仕事で一番自分に合っていると思っています。<br>
+<br>
+営業経験者の方も営業未経験者の方でも興味を持って頂いた方は、ぜひお気軽にご応募お待ちしております！一緒に皆さんと仕事出来るのを楽しみにしております。</p>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+</body>
+</html>

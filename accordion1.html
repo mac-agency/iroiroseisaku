@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<style type="text/css">
+  .cp_actab {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1px;
+  color: #ffffff;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.cp_actab input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_actab label {
+  font-weight: bold;
+  line-height: 3;
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  margin: 0 0 1px 0;
+  cursor: pointer;
+  background: #F2AB29;
+}
+.cp_actab .cp_actab-content {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+  background-color: #F7F7F7;
+}
+.cp_actab .cp_actab-content p {
+  margin: 1em;
+  font-weight: normal;
+}
+/* :checked */
+.cp_actab input:checked ~ .cp_actab-content {
+	max-height: 20em;
+}
+/* Icon */
+.cp_actab label::after {
+	line-height: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	text-align: center;
+}
+.cp_actab input[type=radio] + label::after {
+	content: '+';
+}
+.cp_actab input[type=radio]:checked + label::after {
+	transform: rotateX(180deg);
+}
+
+.read {
+  font-weight: normal;
+  color: rgba(0,0,0,1.00);
+}
+</style>
+</head>
+
+<body>
+  <div class="cp_actab">
+<input id="tab-four" type="radio" name="tabs2">
+<label for="tab-four">Q　Nクリードに入社したきっかけは？</label>
+<div class="cp_actab-content">
+<p class="read">元々接客の仕事をしていたのですが、転職を考え始めたときに、たまたま求人誌に出ていたのがNクリードでした。今まで営業の仕事に携わったことがなかったのですが、未経験の方でも活躍している人が多いということと案内の仕事なのでモノを売ったりする営業に比べてやりやすいのではないかと感じ応募して採用して頂きました。</p>
+</div>
+</div>
+<div class="cp_actab">
+<input id="tab-five" type="radio" name="tabs2">
+<label for="tab-five">Q　実際に入社してみていかがですか？</label>
+<div class="cp_actab-content">
+<p class="read">この仕事は明確な目的と目標しかなく、すべて結果が数字に表れるので、今までの接客業に比べたら自分の頑張りがダイレクトに表れるのでそこにやりがいを感じています。<br>
+<br>
+もちろん頑張った分は給与に直結する仕組みになっているので、自分の頑張った分正しく評価してくれる給与システムも魅力だと思っております。</p>
+</div>
+</div>
+<div class="cp_actab">
+<input id="tab-six" type="radio" name="tabs2">
+<label for="tab-six">Q　最後に求職者に一言お願いします！</label>
+<div class="cp_actab-content">
+<p class="read">僕は営業未経験からこの仕事を始めましたが、充実した教育環境と頑張りがダイレクトに反映されるこの仕事は今までやってきた仕事で一番自分に合っていると思っています。<br>
+<br>
+営業経験者の方も営業未経験者の方でも興味を持って頂いた方は、ぜひお気軽にご応募お待ちしております！一緒に皆さんと仕事出来るのを楽しみにしております。</p>
+</div>
+</div>
+</body>
+</html>

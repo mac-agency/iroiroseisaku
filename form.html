@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <table class="cform">
+<tbody>
+<tr>
+<th>送信内容<span class="required-srt">必須</span></th>
+<td>[mwform_radio name="send" children="応募,お問合せ"]</td>
+</tr>
+<tr>
+<th>お名前<span class="required-srt">必須</span></th>
+<td>[mwform_text name="name" id="name" size="60" placeholder="山田太郎"]</td>
+</tr>
+<tr>
+<th>フリガナ<span class="required-srt">必須</span></th>
+<td>[mwform_text name="furigana" id="furigana" size="60" placeholder="フリガナ"]</td>
+</tr>
+<tr>
+<th>電話番号<span class="required-srt">必須</span></th>
+<td>[mwform_tel name="tel" class="tel"]<p>※携帯電話の番号も可</p></td>
+
+</tr>
+<tr>
+<th>メールアドレス<span class="required-srt">必須</span></th>
+<td>[mwform_email name="mail" id="mail" size="60" placeholder="メールアドレス"]</td>
+</tr>
+<tr>
+<th>お住まい<span class="required-srt">必須</span></th>
+<td>[mwform_select name="address" id="address" children="室蘭市,登別市,伊達市,有珠町,虻田町,洞爺湖町,壮瞥町,豊浦町,その他" value="選択してください。"]</td>
+</tr>
+
+<tr>
+<th>備考<span class="required-srt">必須</span></th>
+<td>[mwform_textarea name="message" id="message" cols="50" rows="5" placeholder="ご自由にお書きください。"]</td>
+</tr>
+</tbody>
+</table>
+<div class="submit-btn">[mwform_submitButton name="確認送信" confirm_value="確認画面へ進む" submit_value="送信する"]</div>
+<p style="text-align: center;">[mwform_backButton value="戻る"]</p>
+
+</body>
+</html>
